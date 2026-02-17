@@ -28,7 +28,7 @@ export default function Hero() {
     return (
         <section
             ref={heroRef}
-            className="min-h-screen flex items-center justify-center bg-cover bg-center relative"
+            className="min-h-screen over flex items-center justify-center bg-cover bg-center relative"
             style={{ backgroundImage: `url(${heroBg})` }}
         >
 

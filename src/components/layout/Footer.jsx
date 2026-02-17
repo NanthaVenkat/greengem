@@ -2,10 +2,13 @@ import { useEffect, useRef } from "react";
 import envelope from '../../assets/Img/envelope.svg'
 import { gsap } from "gsap";
 import { Link } from 'react-router-dom'
+import whatsapptext from "../../assets/Img/talktoexpert-bg.svg"
+import whatsappImg from "../../assets/Img/whatsapp.svg"
 
 export default function Footer() {
 
   const textRef = useRef(null);
+  const rotateRef = useRef(null);
 
   useEffect(() => {
     const el = textRef.current;
@@ -15,6 +18,15 @@ export default function Footer() {
       duration: 10,
       ease: 'linear'
     });
+
+    const el1 = rotateRef.current;
+    gsap.to(el1, {
+      repeat: -1,
+      rotate: 360,
+      duration: 8,
+      ease: 'linear',
+      transformOrigin: "50% 50%",
+    })
   }, []);
 
   return (
@@ -84,6 +96,13 @@ export default function Footer() {
       {/* scrolling text */}
       <div className="bg-[#082233] py-8 overflow-hidden">
         <h2 ref={textRef} className='text-7xl md:text-9xl text-[#ffffff10] font-bold whitespace-nowrap'>Are you interested? Let’s discuss today?</h2>
+      </div>
+
+      <div className="fixed bottom-10 right-10 flex items-center justify-center z-10 w-[120px]">
+        <img ref={rotateRef} src={whatsapptext} alt="" className="w-full shadow-sm shadow-amber-50 rounded-full" />
+        <a href="https://api.whatsapp.com/send/?phone=919994260427&text=Hi%2C+I+have+a+query&type=phone_number&app_absent=0" target="_blank" className="absolute" >
+          <img src={whatsappImg} alt="" width={40} />
+        </a>
       </div>
     </footer>
   );

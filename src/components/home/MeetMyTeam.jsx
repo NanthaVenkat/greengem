@@ -156,10 +156,10 @@ export default function MeetMyTeam() {
             <div className="team-scrollbar hidden sm:block flex-1 h-[3px] bg-gray-200 rounded-full"></div>
 
             <div className="flex gap-4 text-3xl mb-10 sm:mb-0">
-              <button className="team-prev border-2 w-[50px] h-[50px] flex items-center justify-center rounded-lg">
+              <button className="team-prev cursor-pointer border-2 w-[50px] h-[50px] flex items-center justify-center rounded-lg">
                 &lt;
               </button>
-              <button className="team-next border-2 w-[50px] h-[50px] flex items-center justify-center rounded-lg">
+              <button className="team-next cursor-pointer border-2 w-[50px] h-[50px] flex items-center justify-center rounded-lg">
                 &gt;
               </button>
             </div>
