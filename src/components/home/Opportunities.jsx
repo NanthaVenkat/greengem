@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import opportunity1 from "../../assets/Img/opportunity1.svg"
+import opportunity2 from "../../assets/Img/opportunity2.svg"
 import opportunity3 from "../../assets/Img/opportunity3.svg"
 import opportunity4 from "../../assets/Img/opportunity4.svg"
 
@@ -18,7 +19,7 @@ const opportunities = [
     },
     {
         id: 2,
-        Image: opportunity4,
+        Image: opportunity2,
         title: "Large <br className='hidden 2xl:block'/>Land owners",
         phara: "Opportunities for Land Owners in building sustainable communities and businesses in their neighborhood..",
         link: "/reach-out"
