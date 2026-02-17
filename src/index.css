@@ -21,7 +21,20 @@ body {
 }
 
 .swiper-pagination .swiper-pagination-bullet-active {
- background-color: #151515;
- width: 20px;
- border-radius: 50px;
+    background-color: #151515;
+    width: 20px;
+    border-radius: 50px;
+}
+
+.opportunities .swiper-pagination-bullet {
+    background-color: #ffffff90;
+}
+
+.opportunities .swiper-pagination-bullet-active {
+    background-color: #fff;
+}
+
+.team-scrollbar .swiper-scrollbar-drag {
+    background: #082233;
+    height: 4px;
 }

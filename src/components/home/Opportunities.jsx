@@ -42,9 +42,9 @@ const opportunities = [
 
 export default function Opportunities() {
     return (
-        <section className="py-24 px-3.5 bg-[#082233]">
+        <section className="py-14 md:py-24 px-3.5 bg-[#082233]">
             <div className="2xl:max-w-[1440px] 3xl:max-w-[1540px] 4xl:max-w-[1720px] mx-auto">
-                <h2 className="text-5xl mb-16 text-white text-center">Opportunities<span className="inline-block w-[5px] h-[5px] bg-[#53C22B] ml-1"></span></h2>
+                <h2 className="text-4xl sm:text-5xl mb-8 sm:mb-16 text-white text-center">Opportunities<span className="inline-block w-[5px] h-[5px] bg-[#53C22B] ml-1"></span></h2>
 
                 <Swiper
                     modules={[Pagination]}
@@ -56,10 +56,12 @@ export default function Opportunities() {
                         768: { slidesPerView: 2.5},
                         1280: { slidesPerView: 4 },
                     }}
+
+                    className="opportunities"
                 >
 
                     {opportunities.map(opportunitie => (
-                        <SwiperSlide key={opportunitie.id} style={{height: 'unset'}}>
+                        <SwiperSlide key={opportunitie.id} className="pb-8" style={{height: 'unset'}}>
                             <div className="flex flex-col border rounded-lg border-[#FFFFFF66] p-10 h-full text-white">
                                 <div className="flex items-center">
                                     <img src={opportunitie.Image} alt={opportunitie.title.replace(/<[^>]*>/g, "")} className="min-w-[54px] w-[54px] min-h-[54px] h-[54px] object-fit object-center mr-4" />

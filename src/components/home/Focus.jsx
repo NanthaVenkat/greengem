@@ -28,14 +28,14 @@ const powerSources = [
 
 export default function Focus() {
     return (
-        <section className='py-24 px-3.5 bg-white'>
+        <section className='py-14 md:py-24 px-3.5 bg-white'>
             <div className="2xl:max-w-[1440px] 3xl:max-w-[1540px] 4xl:max-w-[1720px] mx-auto text-center">
                 <h3 className='font-bold text-3xl mb-3'>Our Focus</h3>
-                <h2 className='text-5xl mb-16'>Areas & Future Capabilities</h2>
+                <h2 className='text-4xl sm:text-5xl mb-16'>Areas & Future Capabilities</h2>
 
                 <div className='w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6'>
                     {powerSources.map(powerSource => (
-                        <div key={powerSource.id} style={{ backgroundImage: `url(${powerSource.Image})` }} className={`inline-flex p-7 bg-cover bg-center rounded-2xl h-[560px]`}>
+                        <div key={powerSource.id} style={{ backgroundImage: `url(${powerSource.Image})` }} className={`inline-flex p-7 bg-cover bg-center rounded-2xl h-[460px] sm:h-[560px]`}>
                             <p className='text-white text-left font-bold text-2xl mt-auto mb-6'>{powerSource.Title}</p>
                         </div>
                     )

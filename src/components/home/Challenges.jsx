@@ -45,19 +45,19 @@ const challenges = [
 
 export default function Challenges() {
     return (
-        <section className="py-24 px-3.5">
+        <section className="py-14 md:py-24 px-3.5">
             <div className="2xl:max-w-[1440px] 3xl:max-w-[1540px] 4xl:max-w-[1720px] mx-auto">
-                <div className="w-1/2 inline-block">
+                <div className="w-full lg:w-1/2 inline-block mb-6 lg:mb-0">
                     <p className="text-[#53C22B] text-xl font-medium uppercase mb-4">About Green Gem Renewables</p>
-                    <h3 className="text-primary text-4xl">Harness <span><i>the Power of Nature</i></span> <br />with Renewable Energy.</h3>
+                    <h3 className="text-primary text-4xl">Harness <span><i>the Power of Nature</i></span> <br className="hidden sm:block" />with Renewable Energy.</h3>
                 </div>
 
-                <div className="w-1/2 inline-block">
+                <div className="w-full lg:w-1/2 inline-block">
                     <p className="text-secondary text-xl">We’re a new Renewable Energy Independent Power Producer committed to developing large Net Zero communities by 2030. Our mission is to create sustainable spaces that empower businesses and people. Together, we’re shaping a future of endless opportunities.</p>
                 </div>
 
                 <div className="w-full inline-block mt-16">
-                    <h2 className="text-5xl mb-10">Challenges<span className="inline-block w-[5px] h-[5px] bg-[#53C22B] ml-1"></span></h2>
+                    <h2 className="text-4xl sm:text-5xl mb-7 sm:mb-10">Challenges<span className="inline-block w-[5px] h-[5px] bg-[#53C22B] ml-1"></span></h2>
 
                     <Swiper
                         modules={[Pagination]}
@@ -82,10 +82,10 @@ export default function Challenges() {
 
                                     <h2
                                         dangerouslySetInnerHTML={{ __html: challenge.title }}
-                                        className="font-medium text-primary text-3xl mb-3"
+                                        className="font-medium text-primary text-2xl sm:text-3xl mb-3"
                                     />
 
-                                    <p className="text-secondary text-xl">
+                                    <p className="text-secondary text-lg sm:text-xl">
                                         {challenge.phara}
                                     </p>
                                 </div>

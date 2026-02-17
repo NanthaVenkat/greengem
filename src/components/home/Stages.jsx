@@ -1,6 +1,7 @@
 import IndependentPower from '../../assets/Img/independent-power.webp'
 import industrialPark from '../../assets/Img/industrial-park.webp'
 import selfSustainable from '../../assets/Img/self-sustainable.webp'
+import imgIndicator from '../../assets/Img/img-indicator.svg'
 
 const stages = [
     {
@@ -25,21 +26,25 @@ const stages = [
 
 export default function Stages() {
     return (
-        <section className="py-24 px-3.5">
+        <section className="py-14 md:py-24 px-3.5">
             <div className="2xl:max-w-[1440px] 3xl:max-w-[1540px] 4xl:max-w-[1720px] mx-auto">
-                <h2 className="text-5xl text-primary text-center">Stages</h2>
+                <h2 className="text-4xl sm:text-5xl text-primary text-center">Stages</h2>
 
-                <div className="flex mt-10">
+                <div className="grid xl:grid-cols-3 mt-6 sm:mt-10">
                     {stages.map((item, index) => (
-                        <div key={item.id} className={`flex ${index % 2 == 0 ? 'flex-col' : 'flex-col-reverse'}`}>
-                            <div className={`border-dashed h-[400px] ${index % 2 == 0 ? 'border-b-2' : 'border-t-2'}`}>
-                                <img src={item.image} alt="" className='rounded-xl w-[380px] h-[240px] object-fill mx-auto my-12' />
+                        <div key={item.id} className={`flex relative ${index == stages.length - 1 ? 'mb-0' : 'mb-8 sm:mb-0'} ${index % 2 == 0 ? 'flex-col sm:flex-row xl:flex-col' : 'flex-col sm:flex-row-reverse xl:flex-col-reverse'}`}>
+                            <div className={`h-[400px] w-full sm:w-1/2 xl:w-full py-4 sm:p-12 z-1`}>
+                                <img src={item.image} alt="" className='rounded-xl w-full h-full object-cover' />
                             </div>
 
-                            <div className="flex flex-col justify-center text-center py-12 px-4 text-center h-[400px]">
+                            <div className="flex w-full sm:w-1/2 xl:w-full flex-col justify-center text-center xl:py-12 px-0 sm:px-4 text-center xl:h-[400px]">
                                 <h3 className='font-bold text-3xl mb-4' dangerouslySetInnerHTML={{ __html: item.title }} />
                                 <p className='text-xl mx-4'>{item.phara}</p>
                             </div>
+
+                            <div className='hidden sm:block h-full xl:h-[unset] xl:w-full border border-dashed absolute top-0 left-1/2 xl:left-0 xl:top-1/2 xl:translate-y-1/2'></div>
+
+                            <img src={imgIndicator} alt="indicator" className={`hidden sm:block absolute top-1/2 left-1/2 w-5 origin-top z-0 ${index % 2 == 0 ? 'rotate-90 xl:rotate-180 xl:translate-y-[8px]' : '-translate-x-[16px] -rotate-90 xl:rotate-0 xl:-translate-y-[8px]'}`} />
                         </div>
                     ))
                     }
