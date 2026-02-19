@@ -91,7 +91,7 @@ export default function Focus() {
                 style={{ backgroundImage: `url(${powerSource.Image})` }}
                 className="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out group-hover:scale-110"
               ></div>
-              <p className="relative z-10 text-white text-left font-bold text-xl sm:text-xl mt-auto mb-4 sm:mb-6">
+              <p className="relative font-helvetica z-10 text-white text-left font-bold text-xl sm:text-xl mt-auto mb-4 sm:mb-6">
                 {powerSource.Title}
               </p>
             </div>

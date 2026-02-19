@@ -30,21 +30,21 @@ export default function Footer() {
   }, []);
 
   return (
-    <footer className=''>
+    <footer className='mt-0 sm:mt-10 xl:mt-0'>
       <div className="sm:max-w-[90%] mx-auto grid md:grid-cols-[auto_auto] lg:grid-cols-[540px_auto] gap-8 lg:gap-10 pb-0 md:pb-18 px-4">
 
-        <div className="bg-[#082233] p-7 sm:p-10 lg:p-14">
-          <img src={envelope} alt="" className='mb-5 w-[60px] sm:w-[85px]' />
-          <p className='text-[#53C22B] font-medium text-3xl sm:text-5xl leading-9 sm:leading-14 mb-6 sm:mb-8'>Join Us <br className='hidden lg:block' /><span className='text-white'>in Powering a <br className='hidden lg:block' />Sustainable Future</span></p>
-          <p className='text-[#909090] text-base sm:text-lg mb-6 sm:mb-8'>Sign up for Green Gem Energy Updates.</p>
+        <div className="bg-[#082233] p-6 sm:p-8 lg:p-12 lg:mx-8 xl:mx-10">
+          <img src={envelope} alt="" className='mb-5 w-[60px] sm:w-[70px]' />
+          <p className='text-[#53C22B] font-medium text-3xl sm:text-4xl leading-9 sm:leading-11 mb-6 sm:mb-8'>Join Us <br className='hidden lg:block' /><span className='text-white'>in Powering a <br className='hidden lg:block' />Sustainable Future</span></p>
+          <p className='text-[#909090] text-base md:text-md 3xl:text-lg mb-6 sm:mb-8'>Sign up for Green Gem Energy Updates.</p>
 
           <form action="">
-            <input type="text" placeholder='Enter your email' className='text-base sm:text-lg text-[#909090] border border-[#909090] w-full mb-4 sm:mb-5 rounded-sm px-5 sm:px-8 py-3' />
-            <button className='rounded-sm text-lg sm:text-xl w-full bg-[#53C22B] p-3.5 sm:p-5 text-white'>Subscribe</button>
+            <input type="text" placeholder='Enter your email' className='text-base sm:text-md text-[#909090] border border-[#909090] w-full mb-4 sm:mb-5 rounded-sm px-5 sm:px-8 py-3' />
+            <button className='rounded-sm text-md sm:text-lg w-full bg-[#53C22B] p-2 sm:p-3 text-white'>Subscribe</button>
           </form>
         </div>
 
-        <div className="flex flex-col justify-end text-primary pt-10 md:pt-0">
+        <div className="flex flex-col justify-end text-primary pt-10 md:pt-0 2xl:mx-10">
           <div className="grid xl:grid-cols-2 gap-10">
 
             {/* Grid col 1 */}
@@ -101,7 +101,7 @@ export default function Footer() {
       <div className="fixed bottom-5 right-4 sm:bottom-10 sm:right-10 flex items-center justify-center z-10 w-[74px] sm:w-[84px]">
         <img ref={rotateRef} src={whatsapptext} alt="" className="w-full shadow-sm shadow-amber-50 rounded-full" />
         <a href="https://api.whatsapp.com/send/?phone=919994260427&text=Hi%2C+I+have+a+query&type=phone_number&app_absent=0" target="_blank" className="absolute" >
-          <img src={whatsappImg} alt="" className="sm:w-7" />
+          <img src={whatsappImg} alt="" className="w-7" />
         </a>
       </div>
     </footer>

@@ -101,7 +101,7 @@ export default function Stages() {
               <img
                 src={imgIndicator}
                 alt="indicator"
-                className={`hidden sm:block absolute top-1/2 left-1/2 w-5 origin-top z-0 ${index % 2 === 0 ? "rotate-90 xl:rotate-180 xl:translate-y-[8px]" : "-translate-x-[16px] -rotate-90 xl:rotate-0 xl:-translate-y-[8px]"}`}
+                className={`hidden sm:block absolute top-1/2 left-1/2 w-5 origin-top z-0 ${index % 2 === 0 ? "-rotate-90 xl:rotate-0 xl:-translate-y-[8px] -translate-x-[16px] xl:translate-x-0" : "translate-x-[0px] rotate-90 xl:rotate-180 xl:translate-y-[10px]"}`}
               />
             </div>
           ))}
