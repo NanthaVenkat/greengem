@@ -39,7 +39,7 @@ export default function Hero() {
             <div className="hero-content mx-auto z-[2] px-4 py-6 sm:p-3.5">
                 <h2 className="text-center text-white text-[2rem] sm:text-5xl max-w-2xl mx-auto font-light leading-tight sm:leading-12 md:leading-16">Empowering the world with <span className="font-medium">clean energy innovation.</span></h2>
 
-                <p className="max-w-md mx-auto text-center text-white text-base sm:text-lg md:text-md mt-4 sm:mt-5">Revolutionizing Renewable Energy for a Sustainable Future Solving climate change with innovative energy solutions</p>
+                <p className="max-w-md mx-auto text-center text-white text-base md:text-md 3xl:text-lg mt-4 sm:mt-5">Revolutionizing Renewable Energy for a Sustainable Future Solving climate change with innovative energy solutions</p>
             </div>
         </section>
     );

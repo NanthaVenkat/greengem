@@ -97,14 +97,14 @@ export default function Challenges() {
             About Green Gem Renewables
           </p>
           <h3 className="text-primary text-[1.9rem] sm:text-4xl leading-tight">
-            Harness <span><i>the Power of Nature</i></span>{" "}
+            Harness <span><i className="font-libre-baskerville">the Power of Nature</i></span>{" "}
             <br className="hidden sm:block" />
             with Renewable Energy.
           </h3>
         </div>
 
         <div className="challenges-intro w-full lg:w-1/2 inline-block">
-          <p className="text-secondary text-base sm:text-lg md:text-xl">
+          <p className="text-secondary text-base md:text-md 3xl:text-lg">
             We&apos;re a new Renewable Energy Independent Power Producer
             committed to developing large Net Zero communities by 2030. Our
             mission is to create sustainable spaces that empower businesses and
@@ -143,10 +143,10 @@ export default function Challenges() {
 
                   <h2
                     dangerouslySetInnerHTML={{ __html: challenge.title }}
-                    className="font-medium text-primary text-xl sm:text-2xl md:text-3xl mb-2 sm:mb-3"
+                    className="font-medium text-primary text-xl sm:text-2xl md:text-2xl mb-2 sm:mb-3"
                   />
 
-                  <p className="text-secondary text-base sm:text-lg md:text-xl">
+                  <p className="text-secondary text-base md:text-md 3xl:text-lg">
                     {challenge.phara}
                   </p>
                 </div>

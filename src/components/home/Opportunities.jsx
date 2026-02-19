@@ -112,20 +112,20 @@ export default function Opportunities() {
         >
           {opportunities.map((opportunitie) => (
             <SwiperSlide key={opportunitie.id} className="pb-8" style={{ height: "unset" }}>
-              <div className="opportunity-card flex flex-col border rounded-lg border-[#FFFFFF66] p-6 sm:p-10 h-full text-white">
+              <div className="opportunity-card flex flex-col border rounded-lg border-[#FFFFFF66] p-6 sm:p-8 h-full text-white">
                 <div className="flex items-center">
                   <img
                     src={opportunitie.Image}
                     alt={opportunitie.title.replace(/<[^>]*>/g, "")}
-                    className="min-w-[44px] w-[44px] sm:min-w-[54px] sm:w-[54px] min-h-[44px] h-[44px] sm:min-h-[54px] sm:h-[54px] object-fit object-center mr-3 sm:mr-4"
+                    className="min-w-[44px] w-[44px] 3xl:min-w-[54px] 3xl:w-[54px] min-h-[44px] h-[44px] 3xl:min-h-[54px] 3xl:h-[54px] object-fit object-center mr-3 sm:mr-4"
                   />
                   <h3
                     dangerouslySetInnerHTML={{ __html: opportunitie.title }}
-                    className="font-medium text-2xl sm:text-3xl mb-3"
+                    className="font-medium text-2xl sm:text-2xl mb-3"
                   />
                 </div>
-                <p className="text-base sm:text-lg mb-6 sm:mb-8">{opportunitie.phara}</p>
-                <a href={`${opportunitie.link}`} className="inline-block mt-auto w-max text-base sm:text-lg border rounded-sm px-6 sm:px-8 py-2">
+                <p className="text-base md:text-md 3xl:text-lg mb-6 sm:mb-8">{opportunitie.phara}</p>
+                <a href={`${opportunitie.link}`} className="inline-block mt-auto w-max text-base sm:text-md border rounded-sm px-6 sm:px-8 py-2 transition hover:bg-[#53C22B]">
                   Reach Out
                 </a>
               </div>

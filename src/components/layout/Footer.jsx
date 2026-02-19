@@ -51,30 +51,30 @@ export default function Footer() {
             <div className="space-y-4">
 
               <Link to="/careers">
-                <div className="text-3xl semibold relative mb-4">Careers<span className="absolute top-[-80%] left-[30px] text-xs text-white bg-[#EA6430] px-2 py-1 rounded-md current-openings z-[1] after:content-[''] after:w-3 after:h-3 after:bg-[#EA6430] after:absolute after:bottom-[-6px] after:left-[30px] after:rotate-45 after:z-[-1]">Current Openings</span>
+                <div className="text-3xl semibold relative mb-4">Careers<span className="absolute top-[-60%] left-[30px] text-[10px] text-white bg-[#EA6430] px-2 py-1 rounded current-openings z-[1] after:content-[''] after:w-2 after:h-3 after:bg-[#EA6430] after:absolute after:bottom-[-4px] after:left-[15px] after:rotate-45 after:z-[-1]">Current Openings</span>
                 </div>
               </Link>
 
               <div className="space-y-1" id="footerContact">
-                <div className="text-lg sm:text-xl font-medium text-primary">Head office</div>
-                <div className="text-md 2xl:text-lg text-[#4C4C4C]">230, E TV Swamy Rd, R.S. Puram, <br />Coimbatore, Tamil Nadu 641002</div>
+                <div className="text-md sm:text-lg font-medium text-primary">Head office</div>
+                <div className=" text-base md:text-md 3xl:text-lg text-[#4C4C4C]">230, E TV Swamy Rd, R.S. Puram, <br />Coimbatore, Tamil Nadu 641002</div>
               </div>
 
               <div className="space-y-1">
-                <div className="text-lg sm:text-xl font-medium text-primary">Project Site</div>
-                <div className="text-md 2xl:text-lg text-[#4C4C4C]">Emerald Solar Park, Namandi, Near New <br />Kancheepuram Township, Tamilnadu - 604410</div>
+                <div className="text-md sm:text-lg font-medium text-primary">Project Site</div>
+                <div className=" text-base md:text-md 3xl:text-lg text-[#4C4C4C]">Emerald Solar Park, Namandi, Near New <br />Kancheepuram Township, Tamilnadu - 604410</div>
               </div>
             </div>
 
             {/* Grid col 2 */}
             <div className="space-y-3">
               <div className="space-y-1">
-                <div className="text-[#4E4E4E] text-md">Email</div>
-                <Link className="text-lg sm:text-xl 2xl:text-2xl 4xl:text-3xl font-medium break-all" to="mailto:info@greengemrenewables.com">info@greengemrenewables.com</Link>
+                <div className="text-[#4E4E4E] text-sm">Email</div>
+                <Link className="text-lg sm:text-xl font-medium break-all" to="mailto:info@greengemrenewables.com">info@greengemrenewables.com</Link>
               </div>
               <div className="space-y-1">
-                <div className="text-[#4E4E4E] text-md">Phone</div>
-                <Link className="text-lg sm:text-xl 2xl:text-2xl 4xl:text-3xl font-medium " to="tel:+919994260427">+91 99942 60427</Link></div>
+                <div className="text-[#4E4E4E] text-sm">Phone</div>
+                <Link className="text-lg sm:text-xl font-medium " to="tel:+919994260427">+91 99942 60427</Link></div>
             </div>
 
           </div>
@@ -82,11 +82,11 @@ export default function Footer() {
           <hr className="mt-8 mb-2 text-[#D5D8DA]" />
 
           <div className="flex justify-between gap-6 flex-wrap py-8">
-            <div ref={textRef} className="text-md text-[#4B4B4B]">© 2025 Green Gem Energy LLP. All Rights Reserved.</div>
+            <div ref={textRef} className="text-sm text-[#4B4B4B]">© 2025 Green Gem Energy LLP. All Rights Reserved.</div>
             <div className="text-xs">
               <div className="flex gap-6 text-[#4B4B4B]">
-                <Link to="/terms-and-conditions" className="mr-2 text-md">Terms Conditions</Link>
-                <Link to="/privacy-policy" className='text-md'>Privacy Policy</Link>
+                <Link to="/terms-and-conditions" className="mr-2 text-sm">Terms Conditions</Link>
+                <Link to="/privacy-policy" className='text-sm'>Privacy Policy</Link>
               </div>
             </div>
           </div>
@@ -98,10 +98,10 @@ export default function Footer() {
         <h2 ref={textRef} className='text-5xl sm:text-7xl md:text-9xl text-[#ffffff10] font-bold whitespace-nowrap'>Are you interested? Let’s discuss today?</h2>
       </div>
 
-      <div className="fixed bottom-5 right-4 sm:bottom-10 sm:right-10 flex items-center justify-center z-10 w-[84px] sm:w-[120px]">
+      <div className="fixed bottom-5 right-4 sm:bottom-10 sm:right-10 flex items-center justify-center z-10 w-[74px] sm:w-[84px]">
         <img ref={rotateRef} src={whatsapptext} alt="" className="w-full shadow-sm shadow-amber-50 rounded-full" />
         <a href="https://api.whatsapp.com/send/?phone=919994260427&text=Hi%2C+I+have+a+query&type=phone_number&app_absent=0" target="_blank" className="absolute" >
-          <img src={whatsappImg} alt="" width={32} className="sm:w-10" />
+          <img src={whatsappImg} alt="" className="sm:w-7" />
         </a>
       </div>
     </footer>

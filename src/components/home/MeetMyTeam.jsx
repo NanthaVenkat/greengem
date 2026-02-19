@@ -106,7 +106,7 @@ export default function MeetMyTeam() {
         <h2 className="team-intro text-primary text-[1.9rem] sm:text-4xl md:text-5xl font-medium mb-4 sm:mb-5">
           Meet the team
         </h2>
-        <p className="team-intro text-secondary text-base sm:text-xl md:text-2xl max-w-2xl mb-5">
+        <p className="team-intro text-secondary text-base sm:text-xl max-w-xl mb-5">
           Our team brings decades of renewable solar energy, asset management
           and construction.
         </p>
@@ -144,9 +144,9 @@ export default function MeetMyTeam() {
                     <img src={team.Image} alt={team.name} className="w-full h-full object-top object-cover mx-auto" />
                   </div>
                   <div className="py-6 sm:py-8 sm:mt-0 px-0 sm:px-5">
-                    <h4 className="font-medium text-primary text-2xl sm:text-3xl">{team.name}</h4>
-                    <p className="text-[#53C22B] text-base sm:text-xl mb-4 sm:mb-6">{team.designation}</p>
-                    <p className="text-secondary text-base sm:text-xl">{team.phara}</p>
+                    <h4 className="font-medium text-primary text-2xl">{team.name}</h4>
+                    <p className="text-[#53C22B] text-base md:text-md 3xl:text-lg mb-4 sm:mb-6">{team.designation}</p>
+                    <p className="text-secondary text-base md:text-md 3xl:text-lg">{team.phara}</p>
                   </div>
                 </div>
               </SwiperSlide>

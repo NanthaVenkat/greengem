@@ -2,6 +2,8 @@
 
 @theme {
     --font-sans: "DM Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-helvetica: "Helvetica Neue", "Helvetica 55 Roman", Helvetica, Arial, sans-serif;
+    --font-libre-baskerville: "Libre Baskerville", Georgia, "Times New Roman", serif;
 }
 
 @theme {
