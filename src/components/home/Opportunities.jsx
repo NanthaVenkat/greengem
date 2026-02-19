@@ -105,7 +105,7 @@ export default function Opportunities() {
           breakpoints={{
             0: { slidesPerView: 1.2 },
             546: { slidesPerView: 2 },
-            768: { slidesPerView: 2.5 },
+            768: { slidesPerView: 3.5 },
             1280: { slidesPerView: 4 },
           }}
           className="opportunities"

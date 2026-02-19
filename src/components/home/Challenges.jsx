@@ -128,7 +128,7 @@ export default function Challenges() {
               546: { slidesPerView: 2 },
               768: { slidesPerView: 3.5 },
               1280: { slidesPerView: 4 },
-              1500: { slidesPerView: 5 },
+              1400: { slidesPerView: 5 },
             }}
             className="challenges-grid"
           >

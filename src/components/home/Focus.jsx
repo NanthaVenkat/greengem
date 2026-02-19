@@ -85,13 +85,13 @@ export default function Focus() {
           {powerSources.map((powerSource) => (
             <div
               key={powerSource.id}
-              className="focus-card group relative inline-flex p-5 sm:p-7 rounded-2xl h-[380px] sm:h-[460px] overflow-hidden"
+              className="focus-card group relative inline-flex p-5 sm:p-7 rounded-2xl h-[360px] sm:h-[460px] overflow-hidden"
             >
               <div
                 style={{ backgroundImage: `url(${powerSource.Image})` }}
                 className="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out group-hover:scale-110"
               ></div>
-              <p className="relative font-helvetica z-10 text-white text-left font-bold text-xl sm:text-xl mt-auto mb-4 sm:mb-6">
+              <p className="relative font-helvetica z-10 text-white text-left font-bold text-md sm:text-xl mt-auto mb-4 sm:mb-6">
                 {powerSource.Title}
               </p>
             </div>
