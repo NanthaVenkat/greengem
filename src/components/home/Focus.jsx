@@ -74,7 +74,7 @@ export default function Focus() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-12 sm:py-14 md:py-24 px-4 bg-white">
+    <section ref={sectionRef} className="py-12 sm:py-14 md:py-22 px-4 bg-white">
       <div className="sm:max-w-[90%] mx-auto text-center">
         <h3 className="focus-heading font-bold text-2xl sm:text-3xl mb-2 sm:mb-3">Our Focus</h3>
         <h2 className="focus-heading text-[1.9rem] sm:text-4xl md:text-5xl mb-10 sm:mb-16">

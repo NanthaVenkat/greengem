@@ -90,7 +90,7 @@ export default function Challenges() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-12 sm:py-14 md:py-24 px-4">
+    <section ref={sectionRef} className="py-12 sm:py-14 md:py-22 px-4">
       <div className="sm:max-w-[90%] mx-auto">
         <div className="challenges-intro w-full lg:w-1/2 inline-block mb-6 lg:mb-0">
           <p className="text-[#53C22B] text-sm sm:text-base font-helvetica font-medium uppercase mb-3 sm:mb-4">

@@ -91,7 +91,7 @@ export default function Opportunities() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-12 sm:py-14 md:py-24 px-4 bg-[#082233]">
+    <section ref={sectionRef} className="py-12 sm:py-14 md:py-22 px-4 bg-[#082233]">
       <div className="sm:max-w-[90%] mx-auto">
         <h2 className="opportunities-heading text-[1.9rem] sm:text-4xl md:text-5xl mb-8 sm:mb-16 text-white text-center">
           Opportunities

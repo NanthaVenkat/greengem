@@ -75,7 +75,7 @@ export default function Stages() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-12 sm:py-14 md:py-24 px-4">
+    <section ref={sectionRef} className="py-12 sm:py-14 md:py-22 px-4">
       <div className="sm:max-w-[90%] mx-auto">
         <h2 className="stages-heading text-[1.9rem] sm:text-4xl md:text-5xl text-primary text-center">
           Stages

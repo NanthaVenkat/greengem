@@ -101,7 +101,7 @@ export default function MeetMyTeam() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="pt-12 sm:pt-14 md:pt-24 px-4">
+    <section ref={sectionRef} className="pt-12 sm:pt-14 md:pt-22 px-4">
       <div className="sm:max-w-[90%] mx-auto">
         <h2 className="team-intro text-primary text-[1.9rem] sm:text-4xl md:text-5xl font-medium mb-4 sm:mb-5">
           Meet the team
