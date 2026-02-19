@@ -28,7 +28,7 @@ export default function Hero() {
     return (
         <section
             ref={heroRef}
-            className="min-h-screen over flex items-center justify-center bg-cover bg-center relative"
+            className="min-h-[78svh] sm:min-h-screen flex items-center justify-center bg-cover bg-center relative"
             style={{ backgroundImage: `url(${heroBg})` }}
         >
 
@@ -36,10 +36,10 @@ export default function Hero() {
             <div className="absolute top-0 left-0 w-full h-full bg-[#00000070] z-[1]"></div>
 
             {/* content */}
-            <div className="hero-content mx-auto z-[2] p-3.5">
-                <h2 className="text-center text-white text-5xl md:text-6xl max-w-4xl mx-auto font-light leading-12 md:leading-16">Empowering the world with <span className="font-medium">clean energy innovation.</span></h2>
+            <div className="hero-content mx-auto z-[2] px-4 py-6 sm:p-3.5">
+                <h2 className="text-center text-white text-[2rem] sm:text-5xl max-w-2xl mx-auto font-light leading-tight sm:leading-12 md:leading-16">Empowering the world with <span className="font-medium">clean energy innovation.</span></h2>
 
-                <p className="max-w-xl mx-auto text-center text-white text-lg md:text-xl mt-5">Revolutionizing Renewable Energy for a Sustainable Future Solving climate change with innovative energy solutions</p>
+                <p className="max-w-md mx-auto text-center text-white text-base sm:text-lg md:text-md mt-4 sm:mt-5">Revolutionizing Renewable Energy for a Sustainable Future Solving climate change with innovative energy solutions</p>
             </div>
         </section>
     );

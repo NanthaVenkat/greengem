@@ -75,9 +75,9 @@ export default function Stages() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-14 md:py-24 px-3.5">
-      <div className="2xl:max-w-[1440px] 3xl:max-w-[1540px] 4xl:max-w-[1720px] mx-auto">
-        <h2 className="stages-heading text-4xl sm:text-5xl text-primary text-center">
+    <section ref={sectionRef} className="py-12 sm:py-14 md:py-24 px-4">
+      <div className="sm:max-w-[90%] mx-auto">
+        <h2 className="stages-heading text-[1.9rem] sm:text-4xl md:text-5xl text-primary text-center">
           Stages
         </h2>
 
@@ -87,13 +87,13 @@ export default function Stages() {
               key={item.id}
               className={`stage-row flex relative ${index === stages.length - 1 ? "mb-0" : "mb-8 sm:mb-0"} ${index % 2 === 0 ? "flex-col sm:flex-row xl:flex-col" : "flex-col sm:flex-row-reverse xl:flex-col-reverse"}`}
             >
-              <div className="h-[400px] w-full sm:w-1/2 xl:w-full py-4 sm:p-12 z-1">
+              <div className="h-[260px] sm:h-[400px] w-full sm:w-1/2 xl:w-full py-3 sm:p-12 z-1">
                 <img src={item.image} alt="" className="rounded-xl w-full h-full object-cover" />
               </div>
 
               <div className="flex w-full sm:w-1/2 xl:w-full flex-col justify-center text-center xl:py-12 px-0 sm:px-4 text-center xl:h-[400px]">
-                <h3 className="font-bold text-3xl mb-4" dangerouslySetInnerHTML={{ __html: item.title }} />
-                <p className="text-xl mx-4">{item.phara}</p>
+                <h3 className="font-bold text-2xl sm:text-3xl mb-3 sm:mb-4" dangerouslySetInnerHTML={{ __html: item.title }} />
+                <p className="text-base sm:text-lg md:text-xl mx-1 sm:mx-4">{item.phara}</p>
               </div>
 
               <div className="hidden sm:block h-full xl:h-[unset] xl:w-full border border-dashed absolute top-0 left-1/2 xl:left-0 xl:top-1/2 xl:translate-y-1/2"></div>

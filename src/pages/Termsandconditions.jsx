@@ -1,7 +1,7 @@
 export default function TermsandConditions() {
     return (
         <section className="py-14 md:py-24 px-3.5">
-            <div className="2xl:max-w-[1440px] 3xl:max-w-[1540px] 4xl:max-w-[1720px] mx-auto">
+            <div className="sm:max-w-[90%] mx-auto">
                 <h2 className="text-5xl mb-10">Terms and Conditions<span className="inline-block w-[5px] h-[5px] bg-[#53C22B] ml-1"></span></h2>
 
                 <p className="mb-4 text-lg">Welcome to the website of Green Gem Energy LLP, Green Gem Energy sets the terms of use based on the Privacy Policy incorporated into this Agreement by reference.</p>

@@ -74,10 +74,10 @@ export default function Focus() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-14 md:py-24 px-3.5 bg-white">
-      <div className="2xl:max-w-[1440px] 3xl:max-w-[1540px] 4xl:max-w-[1720px] mx-auto text-center">
-        <h3 className="focus-heading font-bold text-3xl mb-3">Our Focus</h3>
-        <h2 className="focus-heading text-4xl sm:text-5xl mb-16">
+    <section ref={sectionRef} className="py-12 sm:py-14 md:py-24 px-4 bg-white">
+      <div className="sm:max-w-[90%] mx-auto text-center">
+        <h3 className="focus-heading font-bold text-2xl sm:text-3xl mb-2 sm:mb-3">Our Focus</h3>
+        <h2 className="focus-heading text-[1.9rem] sm:text-4xl md:text-5xl mb-10 sm:mb-16">
           Areas & Future Capabilities
         </h2>
 
@@ -85,13 +85,13 @@ export default function Focus() {
           {powerSources.map((powerSource) => (
             <div
               key={powerSource.id}
-              className="focus-card group relative inline-flex p-7 rounded-2xl h-[460px] sm:h-[560px] overflow-hidden"
+              className="focus-card group relative inline-flex p-5 sm:p-7 rounded-2xl h-[380px] sm:h-[560px] overflow-hidden"
             >
               <div
                 style={{ backgroundImage: `url(${powerSource.Image})` }}
                 className="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out group-hover:scale-110"
               ></div>
-              <p className="relative z-10 text-white text-left font-bold text-2xl mt-auto mb-6">
+              <p className="relative z-10 text-white text-left font-bold text-xl sm:text-2xl mt-auto mb-4 sm:mb-6">
                 {powerSource.Title}
               </p>
             </div>

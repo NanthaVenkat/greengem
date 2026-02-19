@@ -31,16 +31,16 @@ export default function Footer() {
 
   return (
     <footer className=''>
-      <div className="2xl:max-w-[1440px] 3xl:max-w-[1540px] 4xl:max-w-[1720px] mx-auto grid md:grid-cols-[auto_auto] lg:grid-cols-[540px_auto] gap-8 lg:gap-10 pb-0 md:pb-18 px-3.5">
+      <div className="sm:max-w-[90%] mx-auto grid md:grid-cols-[auto_auto] lg:grid-cols-[540px_auto] gap-8 lg:gap-10 pb-0 md:pb-18 px-4">
 
-        <div className="bg-[#082233] p-14">
+        <div className="bg-[#082233] p-7 sm:p-10 lg:p-14">
           <img src={envelope} alt="" className='mb-5 w-[60px] sm:w-[85px]' />
-          <p className='text-[#53C22B] font-medium text-4xl sm:text-5xl leading-10 sm:leading-14 mb-8'>Join Us <br className='hidden lg:block' /><span className='text-white'>in Powering a <br className='hidden lg:block' />Sustainable Future</span></p>
-          <p className='text-[#909090] text-lg mb-8'>Sign up for Green Gem Energy Updates.</p>
+          <p className='text-[#53C22B] font-medium text-3xl sm:text-5xl leading-9 sm:leading-14 mb-6 sm:mb-8'>Join Us <br className='hidden lg:block' /><span className='text-white'>in Powering a <br className='hidden lg:block' />Sustainable Future</span></p>
+          <p className='text-[#909090] text-base sm:text-lg mb-6 sm:mb-8'>Sign up for Green Gem Energy Updates.</p>
 
           <form action="">
-            <input type="text" placeholder='Enter your email' className='text-lg text-[#909090] border border-[#909090] w-full mb-5 rounded-sm px-8 py-3' />
-            <button className='rounded-sm text-xl w-full bg-[#53C22B] p-5 text-white'>Subscribe</button>
+            <input type="text" placeholder='Enter your email' className='text-base sm:text-lg text-[#909090] border border-[#909090] w-full mb-4 sm:mb-5 rounded-sm px-5 sm:px-8 py-3' />
+            <button className='rounded-sm text-lg sm:text-xl w-full bg-[#53C22B] p-3.5 sm:p-5 text-white'>Subscribe</button>
           </form>
         </div>
 
@@ -56,12 +56,12 @@ export default function Footer() {
               </Link>
 
               <div className="space-y-1" id="footerContact">
-                <div className="text-xl font-medium text-primary">Head office</div>
+                <div className="text-lg sm:text-xl font-medium text-primary">Head office</div>
                 <div className="text-md 2xl:text-lg text-[#4C4C4C]">230, E TV Swamy Rd, R.S. Puram, <br />Coimbatore, Tamil Nadu 641002</div>
               </div>
 
               <div className="space-y-1">
-                <div className="text-xl font-medium text-primary">Project Site</div>
+                <div className="text-lg sm:text-xl font-medium text-primary">Project Site</div>
                 <div className="text-md 2xl:text-lg text-[#4C4C4C]">Emerald Solar Park, Namandi, Near New <br />Kancheepuram Township, Tamilnadu - 604410</div>
               </div>
             </div>
@@ -70,11 +70,11 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="space-y-1">
                 <div className="text-[#4E4E4E] text-md">Email</div>
-                <Link className="text-xl 2xl:text-2xl 4xl:text-3xl font-medium" to="mailto:info@greengemrenewables.com">info@greengemrenewables.com</Link>
+                <Link className="text-lg sm:text-xl 2xl:text-2xl 4xl:text-3xl font-medium break-all" to="mailto:info@greengemrenewables.com">info@greengemrenewables.com</Link>
               </div>
               <div className="space-y-1">
                 <div className="text-[#4E4E4E] text-md">Phone</div>
-                <Link className="text-xl 2xl:text-2xl 4xl:text-3xl font-medium " to="tel:+919994260427">+91 99942 60427</Link></div>
+                <Link className="text-lg sm:text-xl 2xl:text-2xl 4xl:text-3xl font-medium " to="tel:+919994260427">+91 99942 60427</Link></div>
             </div>
 
           </div>
@@ -95,13 +95,13 @@ export default function Footer() {
 
       {/* scrolling text */}
       <div className="bg-[#082233] py-8 overflow-hidden">
-        <h2 ref={textRef} className='text-7xl md:text-9xl text-[#ffffff10] font-bold whitespace-nowrap'>Are you interested? Let’s discuss today?</h2>
+        <h2 ref={textRef} className='text-5xl sm:text-7xl md:text-9xl text-[#ffffff10] font-bold whitespace-nowrap'>Are you interested? Let’s discuss today?</h2>
       </div>
 
-      <div className="fixed bottom-10 right-10 flex items-center justify-center z-10 w-[120px]">
+      <div className="fixed bottom-5 right-4 sm:bottom-10 sm:right-10 flex items-center justify-center z-10 w-[84px] sm:w-[120px]">
         <img ref={rotateRef} src={whatsapptext} alt="" className="w-full shadow-sm shadow-amber-50 rounded-full" />
         <a href="https://api.whatsapp.com/send/?phone=919994260427&text=Hi%2C+I+have+a+query&type=phone_number&app_absent=0" target="_blank" className="absolute" >
-          <img src={whatsappImg} alt="" width={40} />
+          <img src={whatsappImg} alt="" width={32} className="sm:w-10" />
         </a>
       </div>
     </footer>

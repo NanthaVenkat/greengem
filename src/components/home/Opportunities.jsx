@@ -91,9 +91,9 @@ export default function Opportunities() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-14 md:py-24 px-3.5 bg-[#082233]">
-      <div className="2xl:max-w-[1440px] 3xl:max-w-[1540px] 4xl:max-w-[1720px] mx-auto">
-        <h2 className="opportunities-heading text-4xl sm:text-5xl mb-8 sm:mb-16 text-white text-center">
+    <section ref={sectionRef} className="py-12 sm:py-14 md:py-24 px-4 bg-[#082233]">
+      <div className="sm:max-w-[90%] mx-auto">
+        <h2 className="opportunities-heading text-[1.9rem] sm:text-4xl md:text-5xl mb-8 sm:mb-16 text-white text-center">
           Opportunities
           <span className="inline-block w-[5px] h-[5px] bg-[#53C22B] ml-1"></span>
         </h2>
@@ -112,20 +112,20 @@ export default function Opportunities() {
         >
           {opportunities.map((opportunitie) => (
             <SwiperSlide key={opportunitie.id} className="pb-8" style={{ height: "unset" }}>
-              <div className="opportunity-card flex flex-col border rounded-lg border-[#FFFFFF66] p-10 h-full text-white">
+              <div className="opportunity-card flex flex-col border rounded-lg border-[#FFFFFF66] p-6 sm:p-10 h-full text-white">
                 <div className="flex items-center">
                   <img
                     src={opportunitie.Image}
                     alt={opportunitie.title.replace(/<[^>]*>/g, "")}
-                    className="min-w-[54px] w-[54px] min-h-[54px] h-[54px] object-fit object-center mr-4"
+                    className="min-w-[44px] w-[44px] sm:min-w-[54px] sm:w-[54px] min-h-[44px] h-[44px] sm:min-h-[54px] sm:h-[54px] object-fit object-center mr-3 sm:mr-4"
                   />
                   <h3
                     dangerouslySetInnerHTML={{ __html: opportunitie.title }}
-                    className="font-medium text-3xl mb-3"
+                    className="font-medium text-2xl sm:text-3xl mb-3"
                   />
                 </div>
-                <p className="text-lg mb-8">{opportunitie.phara}</p>
-                <a href={`${opportunitie.link}`} className="inline-block mt-auto w-max text-lg border rounded-sm px-8 py-2">
+                <p className="text-base sm:text-lg mb-6 sm:mb-8">{opportunitie.phara}</p>
+                <a href={`${opportunitie.link}`} className="inline-block mt-auto w-max text-base sm:text-lg border rounded-sm px-6 sm:px-8 py-2">
                   Reach Out
                 </a>
               </div>

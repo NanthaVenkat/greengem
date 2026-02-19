@@ -1,7 +1,7 @@
 export default function TermsandConditions() {
     return (
         <section className="py-14 md:py-24 px-3.5">
-            <div className="2xl:max-w-[1440px] 3xl:max-w-[1540px] 4xl:max-w-[1720px] mx-auto">
+            <div className="sm:max-w-[90%] mx-auto">
                 <h2 className="text-5xl mb-10">Privacy Policy<span className="inline-block w-[5px] h-[5px] bg-[#53C22B] ml-1"></span></h2>
 
                 <p className="mb-4">Green Gem Energy LLP is committed to protecting the privacy of our customers as well as all those who are associated with us. To better protect your privacy, we provide this notice explaining our online information practices and the choices you can make about the way your information is collected and used. We will not share personally identifiable information with third parties unless we have your permission or we believe in good faith we are required to by law.</p>

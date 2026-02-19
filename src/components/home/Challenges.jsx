@@ -90,13 +90,13 @@ export default function Challenges() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-14 md:py-24 px-3.5">
-      <div className="2xl:max-w-[1440px] 3xl:max-w-[1540px] 4xl:max-w-[1720px] mx-auto">
+    <section ref={sectionRef} className="py-12 sm:py-14 md:py-24 px-4">
+      <div className="sm:max-w-[90%] mx-auto">
         <div className="challenges-intro w-full lg:w-1/2 inline-block mb-6 lg:mb-0">
-          <p className="text-[#53C22B] text-xl font-medium uppercase mb-4">
+          <p className="text-[#53C22B] text-sm sm:text-base font-medium uppercase mb-3 sm:mb-4">
             About Green Gem Renewables
           </p>
-          <h3 className="text-primary text-4xl">
+          <h3 className="text-primary text-[1.9rem] sm:text-4xl leading-tight">
             Harness <span><i>the Power of Nature</i></span>{" "}
             <br className="hidden sm:block" />
             with Renewable Energy.
@@ -104,7 +104,7 @@ export default function Challenges() {
         </div>
 
         <div className="challenges-intro w-full lg:w-1/2 inline-block">
-          <p className="text-secondary text-xl">
+          <p className="text-secondary text-base sm:text-lg md:text-xl">
             We&apos;re a new Renewable Energy Independent Power Producer
             committed to developing large Net Zero communities by 2030. Our
             mission is to create sustainable spaces that empower businesses and
@@ -113,8 +113,8 @@ export default function Challenges() {
           </p>
         </div>
 
-        <div className="w-full inline-block mt-16">
-          <h2 className="text-4xl sm:text-5xl mb-7 sm:mb-10">
+        <div className="w-full inline-block mt-10 sm:mt-16">
+          <h2 className="text-[1.9rem] sm:text-4xl md:text-5xl mb-6 sm:mb-10">
             Challenges
             <span className="inline-block w-[5px] h-[5px] bg-[#53C22B] ml-1"></span>
           </h2>
@@ -134,19 +134,19 @@ export default function Challenges() {
           >
             {challenges.map((challenge) => (
               <SwiperSlide key={challenge.id} className="pb-8" style={{ height: "unset" }}>
-                <div className="challenge-card border border-[#D5D8DA] rounded-sm py-8 px-6 h-full">
+                <div className="challenge-card border border-[#D5D8DA] rounded-sm py-6 sm:py-8 px-5 sm:px-6 h-full">
                   <img
                     src={challenge.image}
                     alt={challenge.title.replace(/<[^>]*>/g, "")}
-                    className="w-[80px] h-[80px] mb-3"
+                    className="w-[68px] h-[68px] sm:w-[80px] sm:h-[80px] mb-3"
                   />
 
                   <h2
                     dangerouslySetInnerHTML={{ __html: challenge.title }}
-                    className="font-medium text-primary text-2xl sm:text-3xl mb-3"
+                    className="font-medium text-primary text-xl sm:text-2xl md:text-3xl mb-2 sm:mb-3"
                   />
 
-                  <p className="text-secondary text-lg sm:text-xl">
+                  <p className="text-secondary text-base sm:text-lg md:text-xl">
                     {challenge.phara}
                   </p>
                 </div>
