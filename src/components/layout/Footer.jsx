@@ -50,7 +50,7 @@ export default function Footer() {
             {/* Grid col 1 */}
             <div className="space-y-4">
 
-              <Link to="/careers">
+              <Link to="/career">
                 <div className="text-3xl semibold relative mb-4">Careers<span className="absolute top-[-60%] left-[30px] text-[10px] text-white bg-[#EA6430] px-2 py-1 rounded current-openings z-[1] after:content-[''] after:w-2 after:h-3 after:bg-[#EA6430] after:absolute after:bottom-[-4px] after:left-[15px] after:rotate-45 after:z-[-1]">Current Openings</span>
                 </div>
               </Link>
