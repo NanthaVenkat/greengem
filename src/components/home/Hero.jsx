@@ -1,4 +1,6 @@
 import { useState, useEffect, useRef } from "react";
+import logo from "../../assets/Img/logo.svg"
+import { Link } from "react-router-dom"
 import { gsap } from "gsap";
 import heroBg1 from "../../assets/Img/home-hero-banner.webp";
 import heroBg2 from "../../assets/Img/home-hero-banner-2.webp";
@@ -86,6 +88,8 @@ export default function Hero() {
         backgroundImage: `url(${heroBackgroundImage[currentIndex].image})`,
       }}
     >
+      <Link to='/' className="absolute top-6 left-12 brightness-0 invert-[1] z-[2]"><img src={logo} alt="Greengem" className="w-[120px] sm:w-[144px] mb-1 sm:mb-2" /></Link>
+
       {/* black overlay */}
       <div className="absolute top-0 left-0 w-full h-full bg-[#00000070] z-[1]"></div>
 
