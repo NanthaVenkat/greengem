@@ -102,7 +102,7 @@ export default function JobApply() {
 
     try {
       const response = await fetch(
-        "https://formsubmit.co/ajax/vnanthakumar00@gmail.com",
+        "https://formsubmit.co/ajax/admin@greengemrenewables.com",
         {
           method: "POST",
           body: formData,
