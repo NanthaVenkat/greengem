@@ -2,10 +2,10 @@ import logo from "../assets/Img/logo.svg";
 import { Link, useParams } from "react-router-dom";
 import { getCareerJobBySlug } from "../data/careerJobs";
 
-const socialLinks = [
+const getSocialLinks = (url) => [
   {
     name: "Facebook",
-    href: "#",
+    href: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`,
     icon: (
       <svg
         viewBox="0 0 24 24"
@@ -18,7 +18,7 @@ const socialLinks = [
   },
   {
     name: "X",
-    href: "#",
+    href: `https://x.com/intent/post?url=${encodeURIComponent(url)}`,
     icon: (
       <svg
         viewBox="0 0 24 24"
@@ -31,7 +31,7 @@ const socialLinks = [
   },
   {
     name: "LinkedIn",
-    href: "#",
+    href: `https://www.linkedin.com/feed/?shareActive=true&url=${encodeURIComponent(url)}&shareUrl=${encodeURIComponent(url)}`,
     icon: (
       <svg
         viewBox="0 0 24 24"
@@ -44,7 +44,7 @@ const socialLinks = [
   },
   {
     name: "WhatsApp",
-    href: "#",
+    href: `https://api.whatsapp.com/send?text=${encodeURIComponent(url)}`,
     icon: (
       <svg
         viewBox="0 0 24 24"
@@ -99,10 +99,12 @@ export default function JobDetails() {
           <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:gap-4">
             <span className="text-sm font-medium">SHARE IT TO</span>
             <div className="flex items-center gap-2 sm:gap-3">
-              {socialLinks.map((item) => (
+              {getSocialLinks(window.location.href).map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={`Share on ${item.name}`}
                   className="flex h-10 w-10 items-center justify-center rounded-full border border-primary text-primary transition-colors hover:bg-primary hover:text-white"
                 >
