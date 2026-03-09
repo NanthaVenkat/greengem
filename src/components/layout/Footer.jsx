@@ -131,7 +131,7 @@ export default function Footer() {
                 </div>
                 <div className=" text-base md:text-md 3xl:text-lg text-[#4C4C4C]">
                   230, E TV Swamy Rd, R.S. Puram, <br />
-                  Coimbatore, Tamil Nadu 641002
+                  Coimbatore, Tamil Nadu - 641002.
                 </div>
               </div>
 
@@ -141,7 +141,7 @@ export default function Footer() {
                 </div>
                 <div className=" text-base md:text-md 3xl:text-lg text-[#4C4C4C]">
                   Emerald Solar Park, Namandi, Near New <br />
-                  Kancheepuram Township, Tamilnadu - 604410
+                  Kancheepuram Township, Tamilnadu - 604410.
                 </div>
               </div>
             </div>
