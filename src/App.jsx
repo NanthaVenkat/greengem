@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 // import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import Home from "./pages/Home";
@@ -8,12 +9,23 @@ import JobApply from "./pages/JobApply";
 import Termsandconditions from "./pages/Termsandconditions";
 import Privacypolicy from "./pages/Privacypolicy";
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+  }, [pathname]);
+
+  return null;
+}
+
 function App() {
   return (
     <>
       <div className="font-sans">
         <BrowserRouter>
           {/* <Header /> */}
+          <ScrollToTop />
 
           <Routes>
             <Route path="/" element={<Home />} />

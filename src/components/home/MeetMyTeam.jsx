@@ -29,7 +29,7 @@ const Teams = [
     name: "Mrs. Nishta Srinivasan",
     designation: "Execution",
     phara:
-      "A self-made millionaire and young entrepreneur, with multiple million $+ exits to investors now dedicated to building Green Gem.",
+      "A dynamic entrepreneur with an MS in Marketing from ESADE Business School, driven by a commitment to climate change and sustainable living.",
   },
   {
     id: 3,
@@ -37,7 +37,7 @@ const Teams = [
     name: "Mr. Dhiaan Srinivasan",
     designation: "Investor & Advisor",
     phara:
-      "A self-made millionaire and young entrepreneur, with multiple million $+ exits to investors now dedicated to building Green Gem.",
+      "A dynamic entrepreneur leading the JewelOne and the retail division, part of Emerald Group and a modern Jewelry retail brand.",
   },
   {
     id: 4,
@@ -45,7 +45,7 @@ const Teams = [
     name: "Mr. K Srinivasan",
     designation: "Investor & Advisor",
     phara:
-      "A self-made millionaire and young entrepreneur, with multiple million $+ exits to investors now dedicated to building Green Gem.",
+      "Veteran entrepreneur with over 40 years of experience, renowned for revolutionising jewellery manufacturing in India.",
   },
   {
     id: 5,
@@ -53,7 +53,7 @@ const Teams = [
     name: "Mrs. Shakthi Srinivasan",
     designation: "Investor & Advisor",
     phara:
-      "A self-made millionaire and young entrepreneur, with multiple million $+ exits to investors now dedicated to building Green Gem.",
+      "Co-founder of Emerald, a visionar leader who spearheaded the creation of over 600,000 unique jewellery designs, bringing her creativity to sustainable energy solutions.",
   },
 ];
 
