@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import solarEnergy from "../../assets/Img/solar-energy.webp";
 import windEnergy from "../../assets/Img/wind-energy.webp";
 import batteryStorage from "../../assets/Img/battery-storage-system.webp";
-import agriPhotovoltaics from "../../assets/Img/solar-energy.webp";
+import agriPhotovoltaics from "../../assets/Img/Agri-Photovoltaics.png";
 
 const powerSources = [
   {

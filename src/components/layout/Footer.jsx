@@ -76,7 +76,7 @@ export default function Footer() {
       <div className="sm:max-w-[90%] mx-auto grid md:grid-cols-[auto_auto] lg:grid-cols-[540px_auto] gap-8 lg:gap-10 pb-0 md:pb-18 px-4">
         <div className="bg-[#082233] p-6 sm:p-8 lg:p-12 lg:mx-8 xl:mx-10">
           <img src={envelope} alt="" className="mb-5 w-[60px] sm:w-[70px]" />
-          <p className="text-[#53C22B] font-medium text-3xl sm:text-4xl leading-9 sm:leading-11 mb-6 sm:mb-8">
+          <p id="joinus-form" className="text-[#53C22B] font-medium text-3xl sm:text-4xl leading-9 sm:leading-11 mb-6 sm:mb-8">
             Join Us <br className="hidden lg:block" />
             <span className="text-white">
               in Powering a <br className="hidden lg:block" />
@@ -161,9 +161,9 @@ export default function Footer() {
                 <div className="text-[#4E4E4E] text-sm">Phone</div>
                 <Link
                   className="text-lg sm:text-xl font-medium "
-                  to="tel:+919994260427"
+                  to="tel:+918754435363"
                 >
-                  +91 99942 60427
+                  +91 8754435363
                 </Link>
               </div>
             </div>

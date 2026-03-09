@@ -19,7 +19,7 @@ const opportunities = [
     title: "Industries & <br className='hidden 2xl:block'/>Businesses",
     phara:
       "Opportunities for Industries dedicated to achieving RE100 goals and advancing sustainability to lease out Industrial Spaces over a long term.",
-    link: "/reach-out",
+    link: "#joinus-form",
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const opportunities = [
     title: "Large <br className='hidden 2xl:block'/>Land owners",
     phara:
       "Opportunities for Land Owners in building sustainable communities and businesses in their neighborhood..",
-    link: "/reach-out",
+    link: "#joinus-form",
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ const opportunities = [
     title: "Team and <br className='hidden 2xl:block'/>Research",
     phara:
       "Be a part of our Founding Team & build the future of communities together brick by brick.",
-    link: "/reach-out",
+    link: "#joinus-form",
   },
   {
     id: 4,
@@ -43,7 +43,7 @@ const opportunities = [
     title: "Passionate <br className='hidden 2xl:block'/>Startups",
     phara:
       "Incubate your Clean Energy startup with us getting access to not just funding, but also a launchpad to experiment your idea as a business.",
-    link: "/reach-out",
+    link: "#joinus-form",
   },
 ];
 
