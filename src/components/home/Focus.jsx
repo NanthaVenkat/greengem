@@ -20,7 +20,7 @@ const powerSources = [
   {
     id: 3,
     Image: batteryStorage,
-    Title: "Battery Energy Storage Systems(BESS)",
+    Title: "Battery Energy Storage Systems (BESS)",
   },
   {
     id: 4,

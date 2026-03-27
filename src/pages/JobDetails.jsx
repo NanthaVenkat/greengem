@@ -131,22 +131,22 @@ export default function JobDetails() {
           </div>
 
           <div className="grid gap-10 lg:grid-cols-[1fr_320px]">
-            <div>
-              <h2 className="text-4xl font-semibold">Job Description</h2>
+            <div className="lg:mr-16">
+              <h2 className="text-[1.9rem] sm:text-4xl  font-semibold">Job Description</h2>
               <p className="mt-5 text-2xl font-semibold">Responsibilities :</p>
-              <ul className="mt-4 space-y-1 text-md leading-7 text-[#082233]">
+              <ul className="mt-4 space-y-1 text-base md:text-md 3xl:text-lg leading-7 text-[#082233]">
                 {job.responsibilities.map((item) => (
                   <li key={item} className="flex gap-3">
-                    <span className="mt-2 min-h-1.5 h-1.5 min-w-1.5 w-1.5 rounded-full bg-[#ADB4B9]" />
+                    <span className="mt-2 min-h-1.5 h-1.5 min-w-1.5 w-1.5 rounded-full bg-[#53C22B]" />
                     <span>{item}</span>
                   </li>
                 ))}
               </ul>
               <p className="mt-5 text-2xl font-semibold">Required Skills :</p>
-              <ul className="mt-4 space-y-1 text-md leading-7 text-[#082233]">
+              <ul className="mt-4 space-y-1 text-base md:text-md 3xl:text-lg leading-7 text-[#082233]">
                 {job.responsibleSkill.map((item) => (
                   <li key={item} className="flex gap-3">
-                    <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#ADB4B9]" />
+                    <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#53C22B]" />
                     <span>{item}</span>
                   </li>
                 ))}

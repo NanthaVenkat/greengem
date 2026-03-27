@@ -7,7 +7,7 @@ import Career from "./pages/Career";
 import JobDetails from "./pages/JobDetails";
 import JobApply from "./pages/JobApply";
 import Termsandconditions from "./pages/Termsandconditions";
-import Privacypolicy from "./pages/Privacypolicy";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -33,7 +33,7 @@ function App() {
             <Route path="/career/:jobSlug" element={<JobDetails />} />
             <Route path="/career/:jobSlug/apply" element={<JobApply />} />
             <Route path="/terms-and-conditions" element={<Termsandconditions />} />
-            <Route path="/privacy-policy" element={<Privacypolicy />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           </Routes>
 
           <Footer />
