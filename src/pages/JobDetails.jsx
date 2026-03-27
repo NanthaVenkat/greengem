@@ -132,7 +132,7 @@ export default function JobDetails() {
 
           <div className="grid gap-10 lg:grid-cols-[1fr_320px]">
             <div className="lg:mr-16">
-              <h2 className="text-[1.9rem] sm:text-4xl  font-semibold">Job Description</h2>
+              <h2 className="text-[1.9rem] sm:text-4xl font-semibold">Job Description</h2>
               <p className="mt-5 text-2xl font-semibold">Responsibilities :</p>
               <ul className="mt-4 space-y-1 text-base md:text-md 3xl:text-lg leading-7 text-[#082233]">
                 {job.responsibilities.map((item) => (
