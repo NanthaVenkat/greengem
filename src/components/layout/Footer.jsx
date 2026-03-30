@@ -71,6 +71,8 @@ export default function Footer() {
     }
   };
 
+  const currentDate = new Date();
+
   return (
     <footer className="mt-0 sm:mt-10 xl:mt-0">
       <div className="sm:max-w-[90%] mx-auto grid md:grid-cols-[auto_auto] lg:grid-cols-[540px_auto] gap-8 lg:gap-10 pb-0 md:pb-18 px-4">
@@ -173,7 +175,7 @@ export default function Footer() {
 
           <div className="flex justify-between gap-6 flex-wrap py-8">
             <div ref={textRef} className="text-sm text-[#4B4B4B]">
-              © 2025 Green Gem Energy LLP. All Rights Reserved.
+              © {currentDate.getFullYear()} Green Gem Energy LLP. All Rights Reserved.
             </div>
             <div className="text-xs">
               <div className="flex gap-6 text-[#4B4B4B]">
