@@ -154,9 +154,9 @@ export default function Footer() {
                 <div className="text-[#4E4E4E] text-sm">Email</div>
                 <Link
                   className="text-lg sm:text-xl font-medium break-all"
-                  to="mailto:info@greengemenergy.com"
+                  to="mailto:vishnu@greengemenergy.com"
                 >
-                  info@greengemenergy.com
+                  vishnu@greengemenergy.com
                 </Link>
               </div>
               <div className="space-y-1">
